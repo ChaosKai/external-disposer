@@ -1,11 +1,5 @@
-var socket = io('http://localhost/');
+var peer = new Peer();
 
-
-socket.on('connect', function () {
-    socket.send('hi');
-    console.log("connection established");
-
-    socket.on('message', function (msg) {
-        // my msg
-    });
+peer.on('open', function(id) {
+    console.log('My peer ID is: ' + id);
 });
