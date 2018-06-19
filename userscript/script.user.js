@@ -11,7 +11,7 @@
 
 var scriptElement1 = document.createElement("script");
 scriptElement1.type = "text/javascript";
-scriptElement1.src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js";
+scriptElement1.src = "https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.9/peer.min.js";
 document.body.appendChild(scriptElement1);
 
 var scriptElement2 = document.createElement("script");
