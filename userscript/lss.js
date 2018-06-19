@@ -1,15 +1,5 @@
-const socket = io({
-    autoConnect: false
-});
+var peer = new Peer();
 
-socket.open();
-
-socket.on('connection', function (client) {
-    console.log("incomming socket connection!");
-    client.on('message', function () {
-        console.log("incomming message!");
-    });
-    client.on('disconnect', function () {
-        console.log("connection disconnected!");
-    });
+peer.on('open', function(id) {
+    console.log('My peer ID is: ' + id);
 });
