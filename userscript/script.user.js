@@ -9,12 +9,12 @@
 // @grant       none
 // ==/UserScript==
 
-var scriptElement = document.createElement("script");
-scriptElement.type = "text/javascript";
-scriptElement.src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js";
-document.body.appendChild(scriptElement);
+var scriptElement1 = document.createElement("script");
+scriptElement1.type = "text/javascript";
+scriptElement1.src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js";
+document.body.appendChild(scriptElement1);
 
-var scriptElement = document.createElement("script");
-scriptElement.type = "text/javascript";
-scriptElement.src = "https://rawgit.com/ChaosKai/external-disposer/master/userscript/lss.js";
-document.body.appendChild(scriptElement);
+var scriptElement2 = document.createElement("script");
+scriptElement2.type = "text/javascript";
+scriptElement2.src = "https://rawgit.com/ChaosKai/external-disposer/master/userscript/lss.js";
+document.body.appendChild(scriptElement2);
