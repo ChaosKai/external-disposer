@@ -1,11 +1,15 @@
-var io = require('socket.io')(80);
+const socket = io({
+    autoConnect: false
+});
 
-io.on('connection', function (socket) {
+socket.open();
+
+socket.on('connection', function (client) {
     console.log("incomming socket connection!");
-    socket.on('message', function () {
+    client.on('message', function () {
         console.log("incomming message!");
     });
-    socket.on('disconnect', function () {
+    client.on('disconnect', function () {
         console.log("connection disconnected!");
     });
 });
