@@ -1,0 +1,74 @@
+
+
+    #socket-connection
+    {
+        width           : 480px;
+        height          : 320px;
+        
+        position        : fixed;
+        top             : 50%;
+        left            : 50%;
+        z-index         : 10;
+        transform       : translate(-50%,-50%);
+        
+        display         : flex;
+        flex-flow       : column nowrap;
+        justify-content : center;
+        align-items     : center;
+        
+        background      : rgb(250,250,250);
+        box-shadow      : 0px 0px 6px 0px rgba(0,0,0,0.32);
+        border-radius   : 6px;
+    }
+    
+        #socket-loading-dots
+        {
+            width           : 100%;
+            height          : 64px;
+        
+            display         : flex;
+            flex-flow       : row nowrap;
+            justify-content : center;
+            align-items     : center;
+        }
+    
+            #socket-loading-dots > .dot
+            {
+                width           : 0px;
+                height          : 0px;
+                margin          : 48px;
+                transition      : all 400ms;
+
+                display         : flex;
+                flex-flow       : row nowrap;
+                justify-content : center;
+                align-items     : center;
+        
+                background      : rgb(250,250,250);
+                box-shadow      : 0px 0px 6px 0px rgba(0,0,0,0.32);
+                border-radius   : 50%;
+            }
+    
+            #socket-loading-dots > .dot.active
+            {
+                width           : 32px;
+                height          : 32px;
+                margin          : 16px;
+                transition      : all 400ms;
+            }
+    
+        #socket-loading-state
+        {
+            width           : 100%;
+            height          : 72px;
+            margin-top      : 32px;
+        
+            display         : flex;
+            flex-flow       : row nowrap;
+            justify-content : center;
+            align-items     : center;
+            
+            font-size       : 48px;
+            font-weight     : 400px;
+            color           : rgb(250,250,250);
+        }
