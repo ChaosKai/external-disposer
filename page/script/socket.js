@@ -41,7 +41,7 @@ $(document).ready(() => {
             $(".dot").eq(2).removeClass("active");
         }
         $(".dot").eq(current_loading_dot).addClass("active");
-    });
+    }, 500);
     
 });
 
