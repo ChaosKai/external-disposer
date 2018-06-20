@@ -27,21 +27,25 @@ $(document).ready(() => {
         if( current_loading_dot == 0 ) {
             current_loading_dot = 1;
             $(".dot").eq(0).removeClass("active");
-            $(".dot").eq(1).removeClass("active");
+            $(".dot").eq(1).addClass("active");
             $(".dot").eq(2).removeClass("active");
         } else if( current_loading_dot == 1 ) {
             current_loading_dot = 2;
             $(".dot").eq(0).removeClass("active");
             $(".dot").eq(1).removeClass("active");
-            $(".dot").eq(2).removeClass("active");
+            $(".dot").eq(2).addClass("active");
         } else if( current_loading_dot == 2 ) {
-            current_loading_dot = 0;
+            current_loading_dot = 3;
             $(".dot").eq(0).removeClass("active");
+            $(".dot").eq(1).addClass("active");
+            $(".dot").eq(2).removeClass("active");
+        } else if( current_loading_dot == 3 ) {
+            current_loading_dot = 0;
+            $(".dot").eq(0).addClass("active");
             $(".dot").eq(1).removeClass("active");
             $(".dot").eq(2).removeClass("active");
         }
-        $(".dot").eq(current_loading_dot).addClass("active");
-    }, 500);
+    }, 450);
     
 });
 
