@@ -17,3 +17,33 @@ p.on('connect', function () {
 p.on('data', function (data) {
   console.log('data: ' + data)
 })
+
+
+
+$(document).ready(() => {
+    
+    $("#socket-loading-state").text("Verbindung wird hergestellt");
+    loading_dot_interval = setInterval(() => {
+        if( current_loading_dot == 0 ) {
+            current_loading_dot = 1;
+            $(".dot").eq(0).removeClass("active");
+            $(".dot").eq(1).removeClass("active");
+            $(".dot").eq(2).removeClass("active");
+        } else if( current_loading_dot == 1 ) {
+            current_loading_dot = 2;
+            $(".dot").eq(0).removeClass("active");
+            $(".dot").eq(1).removeClass("active");
+            $(".dot").eq(2).removeClass("active");
+        } else if( current_loading_dot == 2 ) {
+            current_loading_dot = 0;
+            $(".dot").eq(0).removeClass("active");
+            $(".dot").eq(1).removeClass("active");
+            $(".dot").eq(2).removeClass("active");
+        }
+        $(".dot").eq(current_loading_dot).addClass("active");
+    });
+    
+});
+
+var loading_dot_interval = null;
+var current_loading_dot  = 2;
