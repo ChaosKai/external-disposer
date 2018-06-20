@@ -37,7 +37,7 @@
                 width           : 0px;
                 height          : 0px;
                 margin          : 32px;
-                transition      : all 400ms;
+                transition      : all 500ms;
 
                 display         : flex;
                 flex-flow       : row nowrap;
