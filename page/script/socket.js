@@ -6,7 +6,10 @@ var p = new SimplePeer({
 p.on('error', function (err) { console.log('error', err) })
 
 p.on('signal', function (data) {
-  console.log('SIGNAL', JSON.stringify(data))
+    console.log('SIGNAL', JSON.stringify(data))
+    if( data.type == "offer" ) {
+        $("#socket-loading-state").text(data.sdp);
+    }
 })
 
 p.on('connect', function () {
