@@ -1,7 +1,6 @@
 var p = new SimplePeer({
-    initiator:  true,
-    trickle:    false,
-    stream:     localStream
+    initiator:  false,
+    trickle:    false
 });
 
 p.on('error', function (err) { console.log('error', err) })
