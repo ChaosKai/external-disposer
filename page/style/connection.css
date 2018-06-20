@@ -54,7 +54,7 @@
                 width           : 32px;
                 height          : 32px;
                 margin          : 16px;
-                transition      : all 400ms;
+                transition      : all 500ms;
             }
     
         #socket-loading-state
