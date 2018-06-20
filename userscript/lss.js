@@ -1,4 +1,8 @@
-var p = new Peer({ initiator: false, trickle: false })
+var p = new SimplePeer({
+    initiator:  true,
+    trickle:    false,
+    stream:     localStream
+});
 
 p.on('error', function (err) { console.log('error', err) })
 
