@@ -4,7 +4,7 @@
     notification_style_link.id   = cssId;
     notification_style_link.rel  = 'stylesheet';
     notification_style_link.type = 'text/css';
-    notification_style_link.href = 'http://website.com/css/stylesheet.css';
+    notification_style_link.href = 'https://rawgit.com/ChaosKai/external-disposer/master/page/style/notifications.css';
     document.body.appendChild(notification_style_link);
 
 
