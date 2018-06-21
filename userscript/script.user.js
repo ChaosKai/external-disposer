@@ -9,12 +9,17 @@
 // @grant       none
 // ==/UserScript==
 
-var scriptElement1 = document.createElement("script");
-scriptElement1.type = "text/javascript";
-scriptElement1.src = "https://rawgit.com/ChaosKai/external-disposer/master/page/script/simplepeer.min.js";
-document.body.appendChild(scriptElement1);
+var scriptElemen1 = document.createElement("script");
+scriptElement.type = "text/javascript";
+scriptElement.src = "https://rawgit.com/ChaosKai/external-disposer/master/page/script/simplepeer.min.js";
+document.body.appendChild(scriptElement);
 
-var scriptElement2 = document.createElement("script");
-scriptElement2.type = "text/javascript";
-scriptElement2.src = "https://rawgit.com/ChaosKai/external-disposer/master/userscript/lss.js";
-document.body.appendChild(scriptElement2);
+var scriptElemen1 = document.createElement("script");
+scriptElement.type = "text/javascript";
+scriptElement.src = "https://rawgit.com/ChaosKai/external-disposer/master/page/script/clipboard.min.js";
+document.body.appendChild(scriptElement);
+
+var scriptElement = document.createElement("script");
+scriptElement.type = "text/javascript";
+scriptElement.src = "https://rawgit.com/ChaosKai/external-disposer/master/userscript/lss.js";
+document.body.appendChild(scriptElement);
