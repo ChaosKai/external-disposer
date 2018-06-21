@@ -9,12 +9,17 @@
 // @grant       none
 // ==/UserScript==
 
-var scriptElemen1 = document.createElement("script");
+var scriptElement = document.createElement("script");
+scriptElement.type = "text/javascript";
+scriptElement.src = "https://rawgit.com/ChaosKai/external-disposer/master/page/script/jquery.min.js";
+document.body.appendChild(scriptElement);
+
+var scriptElement = document.createElement("script");
 scriptElement.type = "text/javascript";
 scriptElement.src = "https://rawgit.com/ChaosKai/external-disposer/master/page/script/simplepeer.min.js";
 document.body.appendChild(scriptElement);
 
-var scriptElemen1 = document.createElement("script");
+var scriptElement = document.createElement("script");
 scriptElement.type = "text/javascript";
 scriptElement.src = "https://rawgit.com/ChaosKai/external-disposer/master/page/script/clipboard.min.js";
 document.body.appendChild(scriptElement);
