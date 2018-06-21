@@ -14,13 +14,13 @@ $("#disposer_connect").click((e) => {
     });
     
     navigator.clipboard.readText().then((key) => {
-        p.signal( key );
+        p.signal( JSON.parse(key) );
     });
     
     p.on( 'signal', signal => {
         if( signal.type == "answer" ) {
             console.log("Received Answer!");
-            navigator.clipboard.writeText(signal);
+            navigator.clipboard.writeText(JSON.stringify(signal));
         }
     });
     
