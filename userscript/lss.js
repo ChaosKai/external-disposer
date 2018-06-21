@@ -28,6 +28,10 @@ $("#disposer_connect").click((e) => {
         trickle:    false
     });
     
+    navigator.clipboard.readText().then((key) => {
+        p.signal( key );
+    });
+    
     p.on( 'signal', signal => {
         if( signal.type == "answer" ) {
             console.log("Received Answer!");
