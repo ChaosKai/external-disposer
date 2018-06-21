@@ -20,7 +20,7 @@ $("#disposer_connect").click((e) => {
     p.on( 'signal', signal => {
         if( signal.type == "answer" ) {
             console.log("Received Answer!");
-            navigator.clipboard.writeText(signal.sdp);
+            navigator.clipboard.writeText(signal);
         }
     });
     
