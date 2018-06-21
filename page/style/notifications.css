@@ -1,0 +1,33 @@
+
+
+    #notifications
+    {
+        width           : "100%";
+        height          : "auto";
+        
+        position        : "fixed";
+        top             : "140px";
+        left            : "0px";
+        z-index         : "20";
+        
+        display         : "flex";
+        flex-flow       : "column nowrap";
+        justify-content : "center";
+        align-items     : "center";
+    }
+    
+    #notifications > .notification
+    {
+        width           : "100%";
+        height          : "auto";
+        
+        position        : "fixed";
+        top             : "140px";
+        left            : "0px";
+        z-index         : "20";
+        
+        display         : "flex";
+        flex-flow       : "column nowrap";
+        justify-content : "center";
+        align-items     : "center";
+    }
