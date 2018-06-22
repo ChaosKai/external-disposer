@@ -21,6 +21,7 @@
         width           : 400px;
         min-height      : 100px;
         margin          : 8px 0px;
+        position        : relative;
         
         display         : flex;
         flex-flow       : column nowrap;
@@ -35,6 +36,10 @@
         {
             width           :  80px;
             height          : 100%;
+            
+            position        : absolute;
+            top             : 0px;
+            left            : 0px;
 
             display         : flex;
             justify-content : center;
@@ -63,8 +68,12 @@
 
         #notifications > .notification > .text
         {
-            width           : 100%;
+            width           : calc(100% - 80px);
             padding         : 16px 32px;
+            
+            position        : absolute;
+            top             : 0px;
+            right           : 0px;
 
             display         : flex;
             flex-flow       : column nowrap;
