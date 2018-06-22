@@ -61,7 +61,7 @@
                 background  : rgb(244,67,54);
             }
 
-        #notifications > .notification > .message
+        #notifications > .notification > .text
         {
             width           : 100%;
             padding         : 16px 32px;
@@ -74,3 +74,37 @@
             font-weight     : 400;
             color           : rgb(33,33,33);
         }
+
+            #notifications > .notification > .text > .title
+            {
+                font-size       : 16px;
+                font-weight     : 700;
+                color           : rgb(33,33,33);
+            }
+
+                #notifications > .notification.info > .text > .title
+                {
+                    color           : rgb(3,155,229);
+                }
+
+                #notifications > .notification.success > .text > .title
+                {
+                    color           : rgb(104,159,56);
+                }
+
+                #notifications > .notification.warning > .text > .title
+                {
+                    color           : rgb(255,152,0);
+                }
+
+                #notifications > .notification.error > .text > .title
+                {
+                    color           : rgb(244,67,54);
+                }
+
+            #notifications > .notification > .text > .message
+            {
+                font-size       : 14px;
+                font-weight     : 400;
+                color           : rgb(33,33,33);
+            }
