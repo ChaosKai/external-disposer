@@ -41,22 +41,22 @@
             align-items     : center;
         }
 
-            #notifications > .notification > .type.info
+            #notifications > .notification.info > .type
             {
                 background  : rgb(3,155,229);
             }
 
-            #notifications > .notification > .type.success
+            #notifications > .notification.success > .type
             {
                 background  : rgb(104,159,56);
             }
 
-            #notifications > .notification > .type.warning
+            #notifications > .notification.warning > .type
             {
                 background  : rgb(255,152,0);
             }
 
-            #notifications > .notification > .type.error
+            #notifications > .notification.error > .type
             {
                 background  : rgb(244,67,54);
             }
